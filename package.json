@@ -1,0 +1,24 @@
+{
+  "name": "bedrock_agent_web_scrape_tools_js",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.141",
+    "@types/node": "^20.14.10",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
