@@ -479,7 +479,7 @@ Go to **Bedrock** > **Agents** and you should see your new agent. Open it and cl
 This was a quick-and-dirty way to get a Bedrock agent up and running. I will eventually turn this into a CloudFormation template to make it easier to deploy (star the GitHub for updates). 
 
 If you no longer want them, you can delete the Lambda function, ECR image, Bedrock agent, and IAM resources:
-_(Dont' forget to use your own account ID's and ARNs here`)_
+_(Don't forget to use your own account ID's and ARNs here)_
 ```bash
 aws bedrock-agent delete-agent --agent-id 999999
 aws iam detach-role-policy --role-name bedrock-agent-service-role --policy-arn arn:aws:iam::111122223333:policy/BedrockAgentInvokeClaude
@@ -492,6 +492,8 @@ aws ecr delete-repository --repository-name bedrock-scraper --force
 ``` 
 
 For more information on Bedrock agents and how to use them, see the [AWS documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html). 
+
+Full code available on [GitHub](https://github.com/b-d055/bedrock-agents-webscraper-js).
 
 Question? Comments? Let me know, I look forward to seeing what you build with Bedrock!
 
