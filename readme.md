@@ -1,4 +1,6 @@
-# This repository is based on the AWS Bedrock Agents Web Scraper example. I've modified it to use TypeScript and use more robust tooling for search and scraping. 
+This repository is based on the AWS Bedrock Agents Web Scraper example. I've modified it to use TypeScript and use more robust tooling for search and scraping. 
+
+Original Dev article [here](https://dev.to/b-d055/adding-web-scraping-and-google-search-to-aws-bedrock-agents-55a8).
 
 ## Motivation
 
